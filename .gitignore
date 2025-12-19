@@ -1,8 +1,38 @@
 HELP.md
+
+# Maven
 target/
 .mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+
+# =========================
+# ML / DJL / NER
+# =========================
+
+# Trained / downloaded models (DO NOT COMMIT)
+models/**
+!models/.gitkeep
+
+# Training outputs
+training/**
+data/**
+
+# Large binary model files
+*.bin
+*.safetensors
+*.msgpack
+*.onnx
+
+# =========================
+# IDEs
+# =========================
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
 
 ### STS ###
 .apt_generated
@@ -12,12 +42,6 @@ target/
 .settings
 .springBeans
 .sts4-cache
-
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
 
 ### NetBeans ###
 /nbproject/private/
